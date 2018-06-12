@@ -1,0 +1,15 @@
+description: PHP Load Generator
+home: https://github.com/kubernetes/helm
+icon: https://github.com/niklaushirt/phpload/raw/master/charts/stable/icons/phpload.png
+keywords:
+- http
+- nginx
+- www
+- web
+maintainers:
+- email: nikh@ch.ibm.com
+  name: Niklaus Hirt
+name: phpload
+sources:
+- https://github.com/niklaushirt/phpload
+version: 1.0.0
