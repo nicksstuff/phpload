@@ -1,7 +1,4 @@
 
-You must label your nodes with:
-kubectl get nodes
+kubectl run -i --tty load-generator --image=busybox /bin/sh
 
-kubectl label nodes <node-name> placement=local --overwrite
-or
-kubectl label nodes <node-name> placement=cloud --overwrite
+while true; do wget -q -O- http://{{ .Values.service.name }}.{{ .Release.Namespace }}.svc.cluster.local; done
