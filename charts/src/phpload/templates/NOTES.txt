@@ -1,4 +1,7 @@
 
 kubectl run -i --tty load-generator --image=busybox /bin/sh
+kubectl delete -load-generator
+or
+docker run -it --rm busybox
 
 while true; do wget -q -O- http://{{ .Values.service.name }}.{{ .Release.Namespace }}.svc.cluster.local; done

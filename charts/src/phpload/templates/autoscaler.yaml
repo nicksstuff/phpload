@@ -1,4 +1,4 @@
-apiVersion: autoscaling/v1
+apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
   name: {{ template "fullname" . }}-autoscaler
@@ -6,7 +6,10 @@ spec:
   scaleTargetRef:
     kind: Deployment
     name: {{ template "fullname" . }}
-    apiVersion: "apps/v1beta1"
   minReplicas: 1
   maxReplicas: 5
-  targetCPUUtilizationPercentage: 20
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        targetAverageUtilization: 20
