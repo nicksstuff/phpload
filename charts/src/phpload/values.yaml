@@ -6,7 +6,7 @@ service:
   type: NodePort
   externalPort: 80
   internalPort: 80
-  nodePort: 32244
+  nodePort: 32288
 replicaCount: 1
 image:
   repository: phpload
