@@ -1,9 +1,9 @@
 apiVersion: v1
 entries:
   phpload:
-  - created: 2018-06-12T11:41:54.503621+02:00
+  - created: 2018-06-12T11:44:07.688207+02:00
     description: PHP Load Generator
-    digest: e1ff2eb0513bba02b87007e6cd5a695364172cc782b3ccdc58267d793f4b56da
+    digest: 2ab046c52929707f8ebeb0c2be22b019d1eec799b0e6bd603a186a466be6e54b
     home: https://github.com/kubernetes/helm
     icon: https://github.com/niklaushirt/phpload/raw/master/charts/stable/icons/phpload.png
     keywords:
@@ -20,4 +20,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/phpload/master/charts/stable/repo/stable/phpload-1.0.0.tgz
     version: 1.0.0
-generated: 2018-06-12T11:41:54.502623+02:00
+generated: 2018-06-12T11:44:07.687091+02:00
